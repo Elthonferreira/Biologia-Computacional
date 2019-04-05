@@ -1,5 +1,5 @@
 
-public class Counting_dna_nucleotides {
+public class DNA {
 
 	public static void main (String args[]) {
 		String dna = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC\r\n";
