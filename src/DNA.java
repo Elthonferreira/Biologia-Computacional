@@ -6,10 +6,11 @@ public class DNA {
 		counting_dna_nucleotides(dna);
 	}
 	public static void counting_dna_nucleotides(String dna) {
-		
+		// Condição sequência tamanho 1000
 		if (dna.length() > 1000) {
 			System.out.println("Tamanho máximo da sequência permitido = 1000 nt.");
 		}
+		// Incremento nas letras achadas
 		int a = 0, c = 0, t = 0, g = 0;
 		for (int i = 0; i < dna.length(); i++) {
 			if (dna.charAt(i) == 'A') {
@@ -28,6 +29,6 @@ public class DNA {
 				continue;
 			}
 		}
-		System.out.println("\n" + a + " " + c + " " + g + " " + t);
+		System.out.println("\n" + a + " " + c + " " + g + " " + t); // Impressão formatada
 	}
 }
