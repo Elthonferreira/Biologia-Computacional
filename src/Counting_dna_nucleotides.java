@@ -7,6 +7,9 @@ public class Counting_dna_nucleotides {
 	}
 	public static void counting_dna_nucleotides(String dna) {
 		
+		if (dna.length() > 1000) {
+			System.out.println("Tamanho máximo da sequência permitido = 1000 nt.");
+		}
 		int a = 0, c = 0, t = 0, g = 0;
 		for (int i = 0; i < dna.length(); i++) {
 			if (dna.charAt(i) == 'A') {
@@ -27,5 +30,4 @@ public class Counting_dna_nucleotides {
 		}
 		System.out.println("\n" + a + " " + c + " " + g + " " + t);
 	}
-	
 }
