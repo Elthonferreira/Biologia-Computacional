@@ -1,5 +1,5 @@
 
-public class Transcribing_dna_to_rna {
+public class RNA {
 
 	public static void main(String[] args) {
 		String dna = "GATGGAACTTGACTACGTAAATT";
