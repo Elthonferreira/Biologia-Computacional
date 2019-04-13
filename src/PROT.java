@@ -1,4 +1,4 @@
-
+// By Elthon Ferreira
 public class PROT {
 	//https://www.sobiologia.com.br/conteudos/Citologia2/AcNucleico6.php
 	//http://bioinformatica.uab.es/genetica/pr7/codi%20aa_sp.htm
@@ -10,7 +10,7 @@ public class PROT {
 	}
 
 	public static void translating_rna_into_protein(String cadeia) {
-		// colocando a string no vetor
+		// Colocando a string no vetor
 		char vetor1[] = new char[cadeia.length()];
 		char vetor2[] = new char[cadeia.length()];
 		for (int i = 0; i < cadeia.length(); i++) {
