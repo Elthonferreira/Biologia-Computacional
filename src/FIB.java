@@ -1,4 +1,4 @@
-// Feito por Elthon Ferreira
+// By Elthon Ferreira
 public class FIB {
 
 	private static long contador; // Contador global
@@ -13,16 +13,14 @@ public class FIB {
 		System.out.println(rabbits_and_recurrence_relations(mes, pares)); // Call and print function
 	}
 	public static long aux(long mes, long pares) {
-			if (mes < 3) return 1;								// Caso base
-			else if (mes == 3 || mes == 4) return pares;		// Caso base
-			else {
-				return aux(mes - 1, pares) + 					// Caso geral
-					  (aux(mes - 2, pares)*pares);
-			}
+			if (mes < 3)					 return 1;								// Caso base
+			else if (mes == 3 || mes == 4) 	 return pares;							// Caso base
+			else 							 return aux(mes - 1, pares) + 			// Caso geral
+					  							   (aux(mes - 2, pares) * pares);	
 	}
 	public static long rabbits_and_recurrence_relations(long mes, long pares) {
-		for (long i = 1; i <= mes; i ++) {				
-			contador += aux(i, pares);							// Contador
+		for (int i = 1; i <= mes; i ++) {				
+			contador += aux(i, pares);		// Contador
 			//System.out.println("(" + i + "):" + aux(i, pares));	
 		}
 		return contador - 1;
